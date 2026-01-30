@@ -22,7 +22,7 @@ app.post("/chat", async (req, res) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+          "Authorization": `Bearer ${process.env.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}`
         },
         body: JSON.stringify({
           model: "gpt-4.1-mini",   // fast & stable
