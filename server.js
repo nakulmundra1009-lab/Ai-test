@@ -34,6 +34,8 @@ app.post("/chat", async (req, res) => {
     );
 
     const data = await response.json();
+console.log("OPENAI RESPONSE:", data);
+
 
     // Always respond safely
     if (!data.choices || !data.choices[0]) {
